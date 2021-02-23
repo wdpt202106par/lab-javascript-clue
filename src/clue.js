@@ -156,6 +156,16 @@ function selectRandom(someArr){
     let randomNum = Math.floor(Math.random() * someArr.length);
     return someArr[randomNum];
 }
+function pickMystery(){
+    let randomSuspect = selectRandom(suspectsArray);
+    let randomRoom = selectRandom(roomsArray);
+    let randomWeapons = selectRandom(weaponsArray);
+    return {
+        randomSuspect,
+        randomWeapons,
+        randomRoom,
+    }
+}
 
 // ITERATION 3
 
