@@ -138,7 +138,22 @@ function selectRandom(array) {
 // ITERATION 3
 function pickMystery(){
     let result ={};
+
    result["suspect"]=selectRandom(suspectsArray);
    result["room"]=selectRandom(roomsArray);
    result["weapon"]=selectRandom(weaponsArray)
+
+
 return result}
+// ITERATION 4 
+function revealMystery (object){
+    let firstName = object.suspect.firstName;
+    let lastName = object.suspect.lastName;
+    let weapon = object.weapon.name;
+    let room = object.room;
+    let sentence =`${firstName.toUpperCase()} ${lastName.toUpperCase()} killed Mr. Boddy using the ${weapon.toUpperCase()} in the ${room.toUpperCase()}!`
+    return sentence
+}
+console.log(revealMystery(pickMystery()));
+//turned the right result but not on Jasmine
+//What is odd is that sentence is no longer a string when I add .toUpperCase to ${room}
