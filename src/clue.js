@@ -1,8 +1,8 @@
 // ITERATION 1
 
 // Suspects Collection
-const suspectsArray = [{
-
+const suspectsArray = [
+    {
         firstName: "Jacob",
         lastName: "Green",
         occupation: "Entrepreneur",
@@ -67,35 +67,36 @@ const suspectsArray = [{
 
 // Rooms Collection
 const roomsArray = [
-{rope, weight: 10},
-{knife, weight: 8},
-{candlestick, weight: 2},
-{poison, weight: 2},
-{dumbbell, weight: 30},
-{axe, weight: 15},
-{bat, weight: 13},
-{trophy, weight: 25},
-{pistol, weight: 20}
-];
+    "Dining Room",
+    "Conservatory",
+    "Kitchen",
+    "Study",
+    "Library",
+    "Billiard Room",
+    "Lounge",
+    "Ballroom",
+    "Hall",
+    "Spa",
+    "Living Room",
+    "Observatory",
+    "Theater",
+    "Guest House",
+    "Patio"
+    ]
 
 // Weapons Collection
 const weaponsArray = [
-Dining Room,
-Conservatory,
-Kitchen,
-Study,
-Library,
-Billiard Room,
-Lounge,
-Ballroom,
-Hall,
-Spa,
-Living Room,
-Observatory,
-Theater,
-Guest House,
-Patio
-];
+    {name: "rope", weight: 10},
+    {name: "knife", weight: 8},
+    {name: "candlestick", weight: 2},
+    {name: "poison", weight: 2},
+    {name: "dumbbell", weight: 30},
+    {name: "axe", weight: 15},
+    {name: "bat", weight: 13},
+    {name: "trophy", weight: 25},
+    {name: "pistol", weight: 20}
+    ];
+     ;
 
 // ITERATION 2
 
