@@ -91,5 +91,15 @@ function selectRandom (array) {
     let randomIndex = Math.floor(Math.random()*array.length)
     return array[randomIndex]
 }
-console.log(selectRandom(weaponsArray))
+function pickMystery () {
+    return {
+        suspect: selectRandom(suspectsArray),
+        weapon: selectRandom(weaponsArray),
+        room: selectRandom(roomsArray)
+    }
+};
 // ITERATION 3
+function revealMystery (mystery) {
+    return `${mystery.suspect.firstName} ${mystery.suspect.lastName} killed Mr. Boddy using the ${mystery.weapon.name} in the ${mystery.room.name}!`
+}
+
