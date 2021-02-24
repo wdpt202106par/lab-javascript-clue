@@ -65,23 +65,23 @@ const suspectsArray = [{
 ];
 
 // Rooms Collection
-const roomsArray = [
-    "Dining Room",
-    "Conservatory",
-    "Kitchen",
-    "Study",
-    "Library",
-    "Billiard Room",
-    "Lounge",
-    "Ballroom",
-    "Hall",
-    "Spa",
-    "Living Room",
-    "Observatory",
-    "Theater",
-    "Guest House",
-    "Patio"
-]
+const roomsArray = [{
+    name: "Dining Room",
+    name: "Conservatory",
+    name: "Kitchen",
+    name: "Study",
+    name: "Library",
+    name: "Billiard Room",
+    name: "Lounge",
+    name: "Ballroom",
+    name: "Hall",
+    name: "Spa",
+    name: "Living Room",
+    name: "Observatory",
+    name: "Theater",
+    name: "Guest House",
+    name: "Patio"
+}]
 
 // Weapons Collection
 const weaponsArray = [{
@@ -150,10 +150,8 @@ function revealMystery (object){
     let firstName = object.suspect.firstName;
     let lastName = object.suspect.lastName;
     let weapon = object.weapon.name;
-    let room = object.room;
-    let sentence =`${firstName.toUpperCase()} ${lastName.toUpperCase()} killed Mr. Boddy using the ${weapon.toUpperCase()} in the ${room.toUpperCase()}!`
+    let room = object.room.name;
+    let sentence =`${firstName} ${lastName} killed Mr. Boddy using the ${weapon} in the ${room}!`
     return sentence
 }
 console.log(revealMystery(pickMystery()));
-//turned the right result but not on Jasmine
-//What is odd is that sentence is no longer a string when I add .toUpperCase to ${room}
