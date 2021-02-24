@@ -167,7 +167,8 @@ function pickMystery() {
 
     return result
 }
-// ITERATION 4 
+// ITERATION 4 - Version Tran Van 
+
 function revealMystery(object) {
     let firstName = object.suspect.firstName;
     let lastName = object.suspect.lastName;
@@ -177,3 +178,14 @@ function revealMystery(object) {
     return sentence
 }
 console.log(revealMystery(pickMystery()));
+
+
+/* ITERATION 4 - Version Alexandre Capaldi 
+
+let newObject = pickMystery();
+
+function revealMystery(object) {
+    return `<Mr ${object.suspect.firstName} ${object.suspect.lastName} killed Mr. Boddy using the ${object.weapon.name} in the ${object.room.name}!`;
+}
+
+revealMystery(newObject); */
